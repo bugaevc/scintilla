@@ -1,3 +1,27 @@
+*** Scintilla GTK 4 port ***
+
+This repository contains a modern, GTK 4 port of Scintilla. To build it:
+
+	cd scintilla/gtk4
+	make
+
+set DEBUG=1 to build in debug mode. The 'gir' and 'vapi' build targets
+(on which the default 'all' target depends) build the Scintilla-5.gir
+and scintilla.vapi files. The 'doc' target builds GObject documentation
+using gi-docgen. The 'demo' build target builds the simple WIP ScintillaDemo
+application (written in Vala).
+
+The main API exposed is the ScintillaView widget class, defined in the
+ScintillaView.h header file.
+
+Read the announcement for an overview:
+
+https://groups.google.com/g/scintilla-interest/c/_ZgpYuzZdoU/m/T2RWqAzxAAAJ
+
+Original README follows.
+
+----------------------------------------------------
+
 README for building of Scintilla, Lexilla, and SciTE
 
 Scintilla and Lexilla can be built by themselves.
