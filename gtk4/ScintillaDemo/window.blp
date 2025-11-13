@@ -1,0 +1,16 @@
+using Gtk 4.0;
+//using Scintilla 5;
+
+template $DemoWindow : Gtk.ApplicationWindow {
+	title: _("Scintilla Demo");
+	default-width: 700;
+	default-height: 500;
+
+	Notebook notebook {
+		scrollable: true;
+		enable-popup: true;
+		show-border: false;
+
+		create-window => $create_window_cb();
+	}
+}

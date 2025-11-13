@@ -1,0 +1,10 @@
+DocumentOption parent="Scintilla.Document" name="Option"
+
+Document
+  .new.bytes default=0
+  .new.options default=Option.DEFAULT
+
+View
+  .get_line.buffer out=false
+  .get_text.buffer out=false
+  .eol_annotation_get_text.buffer out=false

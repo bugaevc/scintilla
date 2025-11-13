@@ -1,0 +1,15 @@
+{
+	local:
+		_ZGVZNKS*;
+		_ZNKS*;
+		_ZNS*;
+		_ZS*;
+		_ZTINS*;
+		_ZTIS*;
+		_ZTSNS*;
+		_ZTSS*;
+		_ZTVNS*;
+		_ZTVS*;
+		_ZZNKS*;
+		_ZZNS*;
+};

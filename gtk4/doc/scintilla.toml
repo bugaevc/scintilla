@@ -1,0 +1,20 @@
+[library]
+description = "A free source code editing component"
+browse_url = "https://sourceforge.net/p/scintilla/code/"
+repository_url = "http://hg.code.sf.net/p/scintilla/code"
+website_url = "https://www.scintilla.org/"
+
+dependencies = [
+  "Gtk-4.0",
+]
+
+[dependencies."Gtk-4.0"]
+name = "Gtk"
+description = "The GTK toolkit"
+docs_url = "https://docs.gtk.org/gtk4/"
+
+[source-location]
+# The base URL for the web UI
+base_url = "https://sourceforge.net/p/scintilla/code/ci/default/tree/"
+# The format for links, using "filename" and "line" for the format
+file_format = "{filename}"

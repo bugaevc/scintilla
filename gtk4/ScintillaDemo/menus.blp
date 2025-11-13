@@ -1,0 +1,34 @@
+using Gtk 4.0;
+
+menu menubar {
+	submenu {
+		label: _("_File");
+		section {
+			item (_("_New"), "app.new-file")
+			item (_("_Open"), "app.open-file")
+			item (_("_Save"), "win.save-file")
+			item (_("Save _As…"), "win.save-file-as")
+		}
+		item (_("New _Window"), "app.new-window")
+		item (_("_Quit"), "app.quit")
+	}
+	submenu {
+		label: _("_Edit");
+
+		section {
+			item (_("_Undo"), "text.undo")
+			item (_("_Redo"), "text.redo")
+		}
+		section {
+			item (_("Cu_t"), "clipboard.cut")
+			item (_("_Copy"), "clipboard.copy")
+			item (_("_Paste"), "clipboard.paste")
+			item (_("_Delete"), "selection.delete")
+			item (_("Select _All"), "selection.select-all")
+		}
+	}
+	submenu {
+		label: _("_Help");
+		item (_("About"), "app.about")
+	}
+}
