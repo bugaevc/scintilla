@@ -3,10 +3,23 @@ class Demo.Tab : Gtk.Widget {
 	public File? file;
 
 	[GtkChild]
+	private unowned Gtk.ScrolledWindow scrolled_window;
+
+	[GtkChild]
 	private unowned Scintilla.View scintilla;
 
 	static construct {
 		set_layout_manager_type (typeof (Gtk.BinLayout));
+	}
+
+	// Vala should do this automatically, but it's currently broken.
+	public override void dispose () {
+		dispose_template (typeof (Tab));
+		base.dispose ();
+	}
+
+	public override bool grab_focus () {
+		return scintilla.grab_focus ();
 	}
 
 	public async void load_file (Cancellable? cancellable) {
